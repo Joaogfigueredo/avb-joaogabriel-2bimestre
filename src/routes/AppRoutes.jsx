@@ -1,22 +1,17 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import Detalhes from "../pages/Detalhes";
-import Favoritos from "../pages/Favoritos";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "../pages/Home/Home";
+import Details from "../pages/Details/Details";
 
-export default function AppRoutes() {
+
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Link to="/">Home</Link>
-        <Link to="/detalhes">Detalhes</Link>
-        <Link to="/favoritos">Favoritos</Link>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/detalhes/:id" element={<Detalhes />} />
-          <Route path="/favoritos" element={<Favoritos />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pokemon/:name" element={<Details />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
