@@ -7,7 +7,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Link para a página inicial */}
         <Link to="/" className="text-white text-xl font-bold hover:text-gray-300">
-          Pokédex
+          Pokédex dos cria
         </Link>
 
         {/* Links de navegação */}
