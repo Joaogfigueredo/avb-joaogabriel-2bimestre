@@ -4,7 +4,7 @@ import { FavoritesProvider } from "./context/FavoritesContext";
 import AppRoutes from "./routes/AppRoutes";
 import Home from "./pages/Home/Home";
 import Details from "./pages/Details/Details";
-import Favorites from "./pages/Favorites/Favorites";
+import Favorites from "./pages/Favoritos/Favorites";
 import Navbar from './components/Navbar'; 
 
 function App() {
